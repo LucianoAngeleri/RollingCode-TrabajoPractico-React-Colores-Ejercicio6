@@ -16,9 +16,9 @@ function App() {
     </Container>
     <Container>
       <Row>
-        <CardColor></CardColor>
-        <CardColor></CardColor>
-        <CardColor></CardColor>
+        <CardColor nombreColor="Nombre del Color" codigoColor="#22651035"></CardColor>
+        <CardColor nombreColor="Nombre del Color" codigoColor="#22651035"></CardColor>
+        <CardColor nombreColor="Nombre del Color" codigoColor="#22651035"></CardColor>
       </Row>
     </Container>
     </>

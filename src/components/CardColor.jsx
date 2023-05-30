@@ -2,15 +2,14 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
-const CardColor = () => {
+const CardColor = ({nombreColor,codigoColor}) => {
     return (
         <Col>
         <Card>
             <Card.Body>
-                <Card.Title>Nombre del Color</Card.Title>
-                <Card.Subtitle>Código del Color</Card.Subtitle>
+                <Card.Title>{nombreColor}</Card.Title>
                 <hr></hr>
-                <Card.Img src="holder.js/100px180"/>
+                <div className="w-100 rounded-3" style={{ backgroundColor: codigoColor, height: "5rem"}}></div>
             </Card.Body>        
                 <Card.Footer className="d-grid gap-2">
                     <Button variant="danger">Borrar</Button>
