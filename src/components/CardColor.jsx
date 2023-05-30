@@ -1,11 +1,9 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
+import { Button, Card, Col } from 'react-bootstrap';
 
 const CardColor = ({nombreColor,codigoColor}) => {
     return (
         <Col>
-        <Card>
+        <Card className="h-100">
             <Card.Body>
                 <Card.Title>{nombreColor}</Card.Title>
                 <hr></hr>
