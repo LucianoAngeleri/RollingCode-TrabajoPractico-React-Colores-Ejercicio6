@@ -15,6 +15,11 @@ function App() {
       <Container className="my-4">
         <FormColor/>
       </Container>
+      <Container fluid className="text-center text-bg-dark py-5 mt-5">
+      <footer>
+        <p>&copy; Todos los derechos reservados.</p>
+      </footer>
+    </Container>
     </>
   );
 }
