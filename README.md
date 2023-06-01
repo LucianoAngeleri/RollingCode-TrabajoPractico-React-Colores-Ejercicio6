@@ -34,12 +34,14 @@ Después de haber instalado las dependencias, sigue los siguientes pasos para ej
 
     ```npm run dev```
 
-2. Abre tu navegador web y ve a la siguiente dirección:
-
-    ```http://localhost:3000```
+2. Abre tu navegador web y ve a la dirección que aparece en la terminal, deberia ser algo como:
+    ```
+    http://localhost:5173/
+    ```
 ## Uso
 * Ingresa el código hexadecimal del color que deseas guardar en el campo de entrada.
 * Haz clic en el botón "Guardar".
 * El color se almacenará en el LocalStorage del navegador.
+* Si quieres borrar un color, puedes hacer click en el botón "Borrar".
 
 *Puedes agregar tantos colores como desees repitiendo los pasos anteriores.*
