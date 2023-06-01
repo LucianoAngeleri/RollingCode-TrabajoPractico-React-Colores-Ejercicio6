@@ -1,5 +1,5 @@
 import { Form, Button, Card, Col, Row } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CardColor from "./CardColor";
 
 
@@ -12,9 +12,14 @@ const FormColor = () => {
     }
   }
 
+  const coloresLocalStorage = JSON.parse(localStorage.getItem("listaColores")) || [];
   const [nombreColor, setNombreColor] = useState("");
   const [codigoColor, setCodigoColor] = useState("");
-  const [colores, setColores] = useState([]);
+  const [colores, setColores] = useState(coloresLocalStorage);
+
+  useEffect(()=>{
+    localStorage.setItem("listaColores",JSON.stringify(colores));
+  }, [colores,])
 
   const handleSubmit = (e) => {
     e.preventDefault();
